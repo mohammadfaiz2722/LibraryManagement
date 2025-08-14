@@ -12,7 +12,7 @@ export default function Topbar({ setSidebarOpen }) {
         >
           <Menu size={24} />
         </button>
-        <h2 className="text-lg font-semibold hidden sm:block">Library Management System</h2>
+        <h2 className=" text-2xl font-bold text-gray-800 hidden sm:block">Library Management System</h2>
       </div>
 
       {/* Center - Search Bar */}
