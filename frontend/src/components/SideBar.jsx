@@ -1,4 +1,4 @@
-import { LayoutDashboard, Bell, X, Users, Library } from "lucide-react";
+import { LayoutDashboard, Bell, X, Users, Library, UserCog, LogIn, UserPlus, KeyRound, CreditCard } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export default function Sidebar({ sidebarOpen, setSidebarOpen }) {
@@ -55,6 +55,41 @@ export default function Sidebar({ sidebarOpen, setSidebarOpen }) {
             onClick={() => setSidebarOpen(false)}
           >
             <Bell size={20} className="text-gray-600" /> Notifications
+          </Link>
+          <Link
+            to="/manage-staff"
+            className="flex items-center gap-3 p-3 rounded-lg text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-200"
+            onClick={() => setSidebarOpen(false)}
+          >
+            <UserCog size={20} className="text-gray-600" /> Manage Staff
+          </Link>
+          <Link
+            to="/login"
+            className="flex items-center gap-3 p-3 rounded-lg text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-200"
+            onClick={() => setSidebarOpen(false)}
+          >
+            <LogIn size={20} className="text-gray-600" /> Log In
+          </Link>
+          <Link
+            to="/signup"
+            className="flex items-center gap-3 p-3 rounded-lg text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-200"
+            onClick={() => setSidebarOpen(false)}
+          >
+            <UserPlus size={20} className="text-gray-600" /> SignUp
+          </Link>
+          <Link
+            to="/forgotpassword"
+            className="flex items-center gap-3 p-3 rounded-lg text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-200"
+            onClick={() => setSidebarOpen(false)}
+          >
+            <KeyRound size={20} className="text-gray-600" /> Forgot Password
+          </Link>
+          <Link
+            to="/membership"
+            className="flex items-center gap-3 p-3 rounded-lg text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-200"
+            onClick={() => setSidebarOpen(false)}
+          >
+            <CreditCard size={20} className="text-gray-600" /> Member Ship Plans
           </Link>
         </nav>
       </div>
